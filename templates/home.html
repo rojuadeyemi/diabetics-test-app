@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Test App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="static/diabetes.png">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('static/diabetes2.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <center>
+        <h1>DIABETES DETECTION</h1>
+
+        <form method="POST" , action="{{url_for('home')}}">
+
+            <b> <label for="a">Blood Sugar Value</label>
+                <input type="text" name="a" placeholder="mg/dL"><br><br></b>
+            <b><label for="b">Insulin Value</label>
+                <input type="text" name="b" placeholder="&mu;/ml"><br><br></b>
+            <input type="submit" value="Predict">
+
+        </form>
+    </center>
+</body>
+
+</html>

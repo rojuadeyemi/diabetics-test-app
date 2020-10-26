@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Diabetes Test App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="static/diabetes.png">
+    <style>
+        body {
+            margin: 2% 5%;
+            max-width: 900px;
+        }
+
+        .text-content {
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body bgcolor="green">
+    <center>
+        <h1>TEST RESULT</h1>
+        <div class="text-content">
+            <h1>{{text.status|safe}}</h1>
+            <h1>{{text['remark']}}</h1>
+        </div>
+        <a href="/">Go back to Home Page</a>
+    </center>
+</body>
+
+
+</html>
