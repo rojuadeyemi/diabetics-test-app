@@ -9,7 +9,7 @@ import pickle
 # read diabetes data
 data = pd.read_csv('diabetes.csv')
 data['Output'] = data['Glucose'].apply(
-    lambda x: 2 if x > 125 else 1 if x > 99 and x <= 125 else 0 if x > 70 else 2)
+    lambda x: 2 if x > 125 else 1 if x > 99 and x <= 125 else 0)
 
 # Remove the part where insulin !=0 for Col= 'Glucose','Output'
 data1 = data.query('Insulin==0 & Glucose !=0')[['Glucose', 'Output']]
